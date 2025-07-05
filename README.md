@@ -1,5 +1,34 @@
 ![Electron JS Python Fast API](https://raw.githubusercontent.com/gnoviawan/fast-api-electron-js/main/public/assets/media/logo/electron-fastapi.png)
 
++++++ [ requirements ] +++++
+python3.10
+
+0. plugins 설치
+- python
+
+1. git clone
+
+2. 가상 환경 생성
+- python -m venv .venv
+
+3. 가상 환경 활성화
+- .venv\Scripts\Activate.ps1
+
+4. requirements install
+- pip install -r requirements.txt
+
+----------------------------------------------------------------------------------------------------------------------------------
+
++++++ [ interpreter ] +++++
+5. File -> project Structure -> Platform Settings -> SDKs -> + -> add python SDK from disk -> System Interpreter -> .venv/python.exe 선택
+
+6. File -> project Structure -> Project Settings -> SDK -> 5에서 생성한 SDK
+
+7. Edit Configurations -> + -> python -> Use specified interpreter 아까 생성한거 -> module : uvicorn -> script : engine.api:app --reload --host 0.0.0.0 --port 7777 --log-level debug
+
+
+
+
 # Electron JS x Python Fast API
 > Modern web UI x Python FAST API
 
